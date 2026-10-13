@@ -1,34 +1,33 @@
-
-
 public class MysteryTest {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
 
         //------TEST 1A: Diff entre arbre de recherche et AVL
         MysteryTree tree = new MysteryTree();
         int n = 31;
-        for(int i = 1; i <= n; i++){
+        for(int i = 1; i <= n; i++) {
             tree.insert(i);
         }
         System.out.println("EXPÉRIENCE 1A");
-        System.out.println("Hauteur après " + n + " insertions croissante : " + tree.height());
+        System.out.println("Hauteur après " + n + " insertions croissantes : " + tree.height());
 
 
 
         //------TEST 1B: Diff entre arbre de recherche et AVL
         MysteryTree tree2 = new MysteryTree();
         int n2 = 63;
-        for(int i = 1; i <= n2; i++){
+        for(int i = 1; i <= n2; i++) {
             tree2.insert(i);
 
         }
+        System.out.println("EXPÉRIENCE 1B");
         System.out.println("Hauteur après " + n2 + " insertions croissantes : " + tree2.height());
 
 
-    // Experience 2: Diff entre AVL et SPlay
+    // Experience 2: Diff entre AVL et Splay
 
         MysteryTree tree3 = new MysteryTree();
-        for (int i = 1; i <= 31; i++) {
+        for (int i = 1; i <= n; i++) {
             tree3.insert(i);
         }
 

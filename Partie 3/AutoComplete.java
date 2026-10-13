@@ -76,7 +76,7 @@ public class AutoComplete {
         return true;
     }
 
-     /**
+    /**
      * Retire récursivement le mot à partir du nœud donné.
      *
      * @return true si le nœud courant est devenu inutile et peut être retiré par son parent
@@ -159,7 +159,6 @@ public class AutoComplete {
         return true;
     }
 
-
     private static int testsPassed = 0;
     private static int testsFailed = 0;
 
@@ -193,8 +192,9 @@ public class AutoComplete {
         System.out.println(ac.contains("chat"));
         System.out.println(ac.contains("chien"));
 
-        // TODO: ajouter vos propres tests
-         System.out.println("--- contains ---");
+        //Autres tests
+        System.out.println("--- contains ---");
+
         check("contains(\"chat\")", true, ac.contains("chat"));
         check("contains(\"chien\")", true, ac.contains("chien"));
         check("contains(\"cha\") : préfixe mais pas un mot", false, ac.contains("cha"));
